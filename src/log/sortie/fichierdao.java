@@ -10,9 +10,16 @@ public class fichierdao {
 
 		//on va chercher le chemin et le nom du fichier et on me tout ca dans un String
 		String adressedufichier = System.getProperty("user.dir") + "/"+ nomFic;
+<<<<<<< HEAD
 
 		try
 		{
+=======
+	
+		try
+		{
+
+>>>>>>> 6db35dd72c7420557007a6b92f1f81af499bb46c
 			FileWriter fw = new FileWriter(adressedufichier, true);
 	
 			BufferedWriter output = new BufferedWriter(fw);

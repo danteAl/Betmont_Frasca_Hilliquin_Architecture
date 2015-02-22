@@ -4,7 +4,7 @@ public class Configuration {
 
 	public Configuration() {
 		
-	}
+	/*}
 	
 	public ajouterCible(Ma classe Maclasse.class, Sortie cible) {
 		
@@ -15,6 +15,8 @@ public class Configuration {
 	}
 	
 	public setLevel(MaClasse MaClasse.class, String Level) {
+		
+	}*/
 		
 	}
 	

@@ -7,10 +7,17 @@ import java.io.IOException;
 
 public class FileRotateHandler extends Handler {
 
-	private int maxTaille = 100;
+	private int maxTaille = 1024*1204*10;
 	private File f;
 	private String newFile;
 	private String path;
+	
+	public FileRotateHandler(String path, int maxTaille) {
+		
+		this.maxTaille = maxTaille;
+		new FileRotateHandler(path);
+
+	}
 	
 	public FileRotateHandler(String path) {
 		
@@ -33,7 +40,7 @@ public class FileRotateHandler extends Handler {
 	public void message(String message) {
 		
 		try {
-			
+
 			if(f.length() < maxTaille) { 	
 				
 				FileWriter fw=new FileWriter(f, true);

@@ -10,12 +10,12 @@ public class FileRotateHandler extends Handler {
 	private int maxTaille = 10;
 	private File f;
 	private String newFile;
-	private String path;
+	//private String path;
 	
 	public FileRotateHandler(String path) {
 		
 		this.newFile = path;
-		this.path = path;
+		//this.path = path;
 		
 		try
 		{

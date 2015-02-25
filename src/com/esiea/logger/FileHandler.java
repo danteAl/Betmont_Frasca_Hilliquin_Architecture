@@ -9,6 +9,12 @@ public class FileHandler extends Handler {
 
 	private File f;
 	
+	public FileHandler() {
+		
+		new FileHandler("./loggers.txt");
+		
+	}
+
 	public FileHandler(String path) {
 		
 		try {
